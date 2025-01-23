@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dash2 Rentals: Confirmation</title>
+    <link rel="stylesheet" href="{{url_for("static", filename="css/confirmstyle.css")}}">
+    <link rel="stylesheet" href="{{ url_for("static", filename="icons/css/all.min.css") }}">  
+</head>
+<body style="background-color: #D8D8DA;">
+    <header>
+        <div class="logo">
+            <a href="{{ url_for('index') }}"><img src="{{url_for("static", filename="img/dash2r.png")}}" alt="logo"></a>
+        </div>
+        <div class="search">
+            <input type="text" placeholder="Search">
+            <div class="menu-icon-container">
+                <img src="{{url_for("static", filename="img/menu-booking.png")}}" alt="Menu Icon">
+            </div>
+        </div>
+        <div class="user">
+            <p>Amren</p>
+            <img src="{{url_for("static", filename="img/profile.png")}}" alt="User Image">
+        </div>
+    </header>
+    <main>
+        <div class="fillup-container" style="display: grid; width: 100%;">
+        <div class="booking-progress">
+            <label style="font-size: 1.2vw; font-weight: 600; padding-left: 12.2vw;">Confirmation</label>
+            <div class="shapes">
+                <div id="circle1" style="z-index: 2; background: rgb(255,255,255); background: radial-gradient(circle, rgba(255,255,255,1) 42%, rgba(57,190,7,1) 42%);"></div>
+                <div id="circle2" style="z-index: 2; background: rgb(255,255,255); background: radial-gradient(circle, rgba(255,255,255,1) 37%, 42%, rgba(57,190,7,1) 42%);"></div>
+                <div id="circle3" style="z-index: 2; background: rgb(255,255,255); background: radial-gradient(circle, rgba(255,255,255,1) 37%, rgba(189,39,46,1) 46%, rgba(189,39,46,1) 100%);"></div>
+            </div>
+            <div class="line-progress"><hr style="width: 27vw; border: none; border-top: 5px solid black; margin-top: -12px; z-index: 1; border-radius: 100px;"></div>
+            <div class="booking-titles">
+                <p id="title1" style="color: gray; font-weight: 500;">Booking details</p>
+                <p id="title2" style="color: gray; font-weight: 500;">Payment methods</p>
+                <p id="title3" style="font-weight: 500;">Confirmation</p>
+            </div>
+        </div>
+
+        <div class="details-container">
+            <div class="first-column">
+                <div class="booking-details">
+
+                    <!-- dito lalabas -->
+                    <label id="section-label">Booking Information</label>
+                    <div>
+                        <label class="information">•&ensp;Booking ID</label>
+                        <label>ID</label>
+                    </div>
+                    <div>
+                        <label class="information">•&ensp;Name</label>
+                        <label>Name</label>
+                    </div>
+                    <div>
+                        <label class="information">•&ensp;Pick-up Date</label>
+                        <label>pDate&ensp;-&ensp;pTime</label>
+                    </div>
+                    <div>
+                        <label class="information">•&ensp;Return Date</label>
+                        <label>rDate&ensp;-&ensp;rTime</label>
+                    </div>
+                    <div>
+                        <label class="information">•&ensp;Location</label>
+                        <label><i class="fa-regular fa-compass"></i>&ensp;Loc</label>
+                    </div>
+                </div>
+                <hr style="border: none; border-top: 1px solid rgb(168, 168, 168);">
+                <div class="payment-details">
+                    
+                    <!-- Dito matic na magcocompute huhu sorry di ko alam kung pano -->
+                    <label id="section-label">Payment</label>
+                    <div>
+                        <label class="information">Trx ID</label>
+                        <label class="user-info">ID</label>
+                    </div>
+                    <div>
+                        <label class="information">Amount:</label>
+                        <label class="user-info">amt</label>
+                    </div>
+                    <div>
+                        <label class="information">Driver's Fee</label>
+                        <label class="user-info">fee</label>
+                    </div>
+                    <hr class="long-dashed-line">
+                    <div>
+                        <label class="sum">Total Amount</label>
+                        <label class="user-info">amt</label>
+                    </div>
+                    <div>
+                        <label style="font-weight: 500;">Payment with</label>
+                        <img src="{{ url_for("static", filename="img/mastercard.png")}}" style="width: 35px; height: 28px; margin-top: -2px;" alt="Payment Method Icon">
+                    </div>
+                </div>
+            </div>
+            
+        <div class="second-column">
+            <div class="car-summary">
+                <label id="section-label">Car Details</label>
+                <div class="car-details">    
+                    <div class="car-image-section" style="display: grid;">
+                        <img src="{{url_for("static", filename="img/car-confirmation.png")}}" alt="Car Image">
+                        <button onclick="detailsNotReleased()" class="detailsbtn">See more car details</button>
+                        <script>
+                            function detailsNotReleased() {
+                                alert("Feature is not yet released.");
+                            }
+                        </script>
+                    </div>
+                    <hr style="border: none; border-top: 1px solid rgb(168, 168, 168); width: auto; margin: 1rem 0 1rem 0;">
+                    <div class="car-info">
+                        <label id="car-label" style="font-weight: 600;  font-size: 18px;">Tesla Model S</label>
+                        <div class="car-data" style="display: flex; justify-content:space-between;">
+                            <p style="font-size: 14px; color: #555; width: 350px; word-wrap: break-word; white-space: normal;">A car with high specs that are rented at an affordable price.</p>
+                            <div class="rating" style="display: block; margin: -1rem 1rem 0 0;">
+                                <p style="font-size: 14px; font-weight: 600; justify-self: center; margin-bottom: 0;">5.0&ensp;<i class="fa-solid fa-star" style="color: #ff8f3a;"></i></p>
+                                <p style="font-size: 12px; color: #555;">(100+ reviews)</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="contBtn" style="justify-self: center;">
+                    <a href="{{ url_for("states") }}"><button>Confirm Rental</button></a>
+                </div>
+            </div>
+        </div>
+        </div>
+        </div>
+    </main>
+</body>
+</html>

@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{url_for("static", filename="f-css/index.css")}}">
+    <title>Dash Rentals</title>
+</head>
+
+<body>
+    <!-- Navbar -->
+    <header>
+        <a href="/">
+            <img src="static/assets/logo.png" id="logo" alt="Logo" />
+        </a>
+        <div class="search-container">
+            <input type="text" placeholder="Search" />
+            <button>
+                <img src="static\assets\grid.png" alt="grid" />
+            </button>
+        </div>
+        <div class="profile-container">
+            <p id="dropdownMenu">Amren</p>
+            <div id="dropdownContent" class="dropdown-content">
+                <a href="#profile-settings" onclick="featureNotReleased()">Profile Settings</a>
+                <a href="#security-privacy" onclick="featureNotReleased()">Security and Privacy</a>
+                <a href="#help-support" onclick="featureNotReleased()">Help Support</a>
+                <a href="#log-out">Log Out</a>
+            </div>
+            <img src="{{url_for("static", filename="assets/profile.png")}}" id="profile" alt="Profile Picture" />
+        </div>
+    </header>
+    <main>
+        <!-- Info Cards -->
+        <section class="section-info">
+            <div class="info-cards">
+                <img src="static\assets\location.png" alt="search icon" />
+                <div>
+                    <p class="label">Pickup Location</p>
+                    <p class="value">Eastwood Quezon City</p>
+                </div>
+                <p id="chip">I want to rent in a different place</p>
+            </div>
+            <div class="info-cards">
+                <img src="static\assets\calendar.png" alt="calendar icon" />
+                <div>
+                    <p class="label">Pickup date and time</p>
+                    <p class="value">January 22, 2025</p>
+                </div>
+            </div>
+            <div class="info-cards">
+                <img src="static\assets\calendar.png" alt="calendar icon" />
+                <div>
+                    <p class="label">Return Date</p>
+                    <p class="value">January 30, 2025</p>
+                </div>
+            </div>
+            <div class="info-cards">
+                <img src="static\assets\time.png" alt="time icon" />
+                <div>
+                    <p class="label">Return Time</p>
+                    <p class="value">12:00 pm</p>
+                </div>
+            </div>
+            <button>
+                <img src="static\assets\search.png" alt="search icon" />
+            </button>
+        </section>
+
+        <!-- Brands -->
+        <section class="section-brands">
+            <p>BRANDS</p>
+            <div>
+                <a href="\chevi"><img src="static\assets\chevi.png" alt="chevi logo"></a>
+                <a href="\nissan"><img src="static\assets\ford.png" alt="ford logo"></a>
+                <a href="#" onclick="featureNotReleased()"><img src="static\assets\mercedes.png" alt="mercedes logo"></a>
+                <a href="#" onclick="featureNotReleased()"><img src="static\assets\subarru.png" alt="subarru logo"></a>
+                <a href="#" onclick="featureNotReleased()"><img src="static\assets\hyundai.png" alt="hyundai logo"></a>
+                <a href="#" onclick="featureNotReleased()"><img src="static\assets\lambo.png" alt="lambo logo"></a>
+                <a href="#" onclick="featureNotReleased()"><img src="static\assets\tesla.png" alt="tesla logo"></a>
+                <a href="#" onclick="featureNotReleased()"><img src="static\assets\byd.png" alt="byd logo"></a>
+                <a href="#" onclick="featureNotReleased()"><img src="static\assets\ferrari.png" alt="ferrari logo"></a>
+                <a href="#" onclick="featureNotReleased()"><img src="static\assets\bmw.png" alt="bmw logo"></a>
+                <a href="#" onclick="featureNotReleased()"><img src="static\assets\mazda.png" alt="mazda logo"></a>
+            </div>
+        </section>
+
+        <!-- Yachts & Helicopters -->
+        <section class="section-yh">
+            <div class="yachts">
+                <!-- <img src="static\assets\yachts.png" alt="yachts"> -->
+                <div>
+                    <p>YACHTS</p>
+                    <button onclick="featureNotReleased()">See more</button>
+                </div>
+            </div>
+            <div class="helicopters">
+                <!-- <img src="static\assets\helicopter.png" alt="helicopter"> -->
+                <div>
+                    <p>HELICOPTERS</p>
+                    <button onclick="featureNotReleased()">See more</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Car Cards -->
+        <section class="section-cars">
+            <div class="car-cards">
+                <div class="car-container">
+                    <img src="static\assets\cars\toyota1.png" alt="lambo">
+                </div>
+                <div class="card-body">
+                    <p> Aventador</p>
+                    <div class="ratings-container">
+                        <p class="ratings">4.9</p>
+                        <img src="static\assets\star.png" alt="star">
+                    </div>
+                    <div class="location-container">
+                        <img src="static\assets\location.png" alt="star">
+                        <p class="location">Biringan City</p>
+                    </div>
+                    <div class="pricing">
+                        <p class="fee">50k/Day</p>
+                        <button>Book now</button>
+                    </div>
+                </div>
+            </div>
+            <div class="car-cards">
+                <div class="car-container">
+                    <img src="static\assets\cars\toyota2.png" alt="lambo">
+                </div>
+                <div class="card-body">
+                    <p>Ford Kicks</p>
+                    <div class="ratings-container">
+                        <p class="ratings">5.0</p>
+                        <img src="static\assets\star.png" alt="star">
+                    </div>
+                    <div class="location-container">
+                        <img src="static\assets\location.png" alt="star">
+                        <p class="location">Eastwood, QC</p>
+                    </div>
+                    <div class="pricing">
+                        <p class="fee">4k/Day</p>
+                        <button>Book now</button>
+                    </div>
+                </div>
+            </div>
+            <div class="car-cards">
+                <div class="car-container">
+                    <img src="static\assets\cars\toyota3.png" alt="lambo">
+                </div>
+                <div class="card-body">
+                    <p>Ford Sentra</p>
+                    <div class="ratings-container">
+                        <p class="ratings">5.0</p>
+                        <img src="static\assets\star.png" alt="star">
+                    </div>
+                    <div class="location-container">
+                        <img src="static\assets\location.png" alt="star">
+                        <p class="location">Dasmarinas</p>
+                    </div>
+                    <div class="pricing">
+                        <p class="fee">10k/Day</p>
+                        <button>Book now</button>
+                    </div>
+                </div>
+            </div>
+            <div class="car-cards">
+                <div class="car-container">
+                    <img src="static\assets\cars\toyota4.png" alt="lambo">
+                </div>
+                <div class="card-body">
+                    <p>Ford Murano</p>
+                    <div class="ratings-container">
+                        <p class="ratings">5.0</p>
+                        <img src="static\assets\star.png" alt="star">
+                    </div>
+                    <div class="location-container">
+                        <img src="static\assets\location.png" alt="star">
+                        <p class="location">Bonifacio Global City</p>
+                    </div>
+                    <div class="pricing">
+                        <p class="fee">2k/Day</p>
+                        <button>Book now</button>
+                    </div>
+                </div>
+            </div>
+            <div class="car-cards">
+                <div class="car-container">
+                    <img src="static\assets\cars\toyota5.png" alt="lambo">
+                </div>
+                <div class="card-body">
+                    <p>Ford Aventador</p>
+                    <div class="ratings-container">
+                        <p class="ratings">5.0</p>
+                        <img src="static\assets\star.png" alt="star">
+                    </div>
+                    <div class="location-container">
+                        <img src="static\assets\location.png" alt="star">
+                        <p class="location">Shaw Boulevard</p>
+                    </div>
+                    <div class="pricing">
+                        <p class="fee">10k/Day</p>
+                        <button>Book now</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+         <!-- Duplicate Section-Cars -->
+         <section class="section-cars">
+            <div class="car-cards">
+                <div class="car-container">
+                    <img src="static\assets\cars\toyota6.png" alt="lambo">
+                </div>
+                <div class="card-body">
+                    <p>Ford Magnite</p>
+                    <div class="ratings-container">
+                        <p class="ratings">4.9</p>
+                        <img src="static\assets\star.png" alt="star">
+                    </div>
+                    <div class="location-container">
+                        <img src="static\assets\location.png" alt="star">
+                        <p class="location">Tondo ni coco martin</p>
+                    </div>
+                    <div class="pricing">
+                        <p class="fee">5k/Day</p>
+                        <button>Book now</button>
+                    </div>
+                </div>
+            </div>
+            <div class="car-cards">
+                <div class="car-container">
+                    <img src="static\assets\cars\toyota7.png" alt="lambo">
+                </div>
+                <div class="card-body">
+                    <p>Ford Pathfinder</p>
+                    <div class="ratings-container">
+                        <p class="ratings">5.0</p>
+                        <img src="static\assets\star.png" alt="star">
+                    </div>
+                    <div class="location-container">
+                        <img src="static\assets\location.png" alt="star">
+                        <p class="location">Marilag City</p>
+                    </div>
+                    <div class="pricing">
+                        <p class="fee">5k/Day</p>
+                        <button>Book now</button>
+                    </div>
+                </div>
+            </div>
+            <div class="car-cards">
+                <div class="car-container">
+                    <img src="static\assets\cars\toyota8.png" alt="lambo">
+                </div>
+                <div class="card-body">
+                    <p>Rogue</p>
+                    <div class="ratings-container">
+                        <p class="ratings">5.0</p>
+                        <img src="static\assets\star.png" alt="star">
+                    </div>
+                    <div class="location-container">
+                        <img src="static\assets\location.png" alt="star">
+                        <p class="location">Jan lang sa tabi tabi</p>
+                    </div>
+                    <div class="pricing">
+                        <p class="fee">5k/Day</p>
+                        <button>Book now</button>
+                    </div>
+                </div>
+            </div>
+            <div class="car-cards">
+                <div class="car-container">
+                    <img src="static\assets\cars\toyota9.png" alt="lambo">
+                </div>
+                <div class="card-body">
+                    <p>Altima</p>
+                    <div class="ratings-container">
+                        <p class="ratings">5.0</p>
+                        <img src="static\assets\star.png" alt="star">
+                    </div>
+                    <div class="location-container">
+                        <img src="static\assets\location.png" alt="star">
+                        <p class="location">Bhie Ghie Chie</p>
+                    </div>
+                    <div class="pricing">
+                        <p class="fee">20k/Day</p>
+                        <button>Book now</button>
+                    </div>
+                </div>
+            </div>
+            <div class="car-cards">
+                <div class="car-container">
+                    <img src="static\assets\cars\toyota10.png" alt="bronco">
+                </div>
+                <div class="card-body">
+                    <p>Frontier</p>
+                    <div class="ratings-container">
+                        <p class="ratings">5.0</p>
+                        <img src="static\assets\star.png" alt="star">
+                    </div>
+                    <div class="location-container">
+                        <img src="static\assets\location.png" alt="star">
+                        <p class="location">Mt. Kamuning, Kapagod City</p>
+                    </div>
+                    <div class="pricing">
+                        <p class="fee">7k/Day</p>
+                        <button>Book now</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <script>
+        function featureNotReleased() {
+            alert("Feature is not yet released.");
+        }
+
+        
+        document.addEventListener("DOMContentLoaded", function () {
+            const dropdownMenu = document.getElementById("dropdownMenu");
+            const profileContainer = document.querySelector(".profile-container");
+        
+            dropdownMenu.addEventListener("click", function (event) {
+                event.stopPropagation();
+                profileContainer.classList.toggle("active");
+            });
+        
+            document.addEventListener("click", function (event) {
+                if (!profileContainer.contains(event.target)) {
+                    profileContainer.classList.remove("active");
+                }
+            });
+        });
+    </script>
+    
+</body>
+
+</html>

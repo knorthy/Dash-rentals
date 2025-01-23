@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dash2 Rentals: Booking</title>
+    <link rel="stylesheet" href="{{url_for("static", filename="css/bookingstyle.css")}}">
+    <link rel="stylesheet" href="{{ url_for("static", filename="icons/css/all.min.css") }}">  
+</head>
+<body style="background-color: #D8D8DA;">
+    <header>
+        <div class="logo">
+            <a href="{{ url_for('index') }}"><img src="{{url_for("static", filename="img/dash2r.png")}}" alt="logo"></a>
+        </div>
+        <div class="search">
+            <input type="text" placeholder="Search">
+            <div class="menu-icon-container">
+                <img src="{{url_for("static", filename="img/menu-booking.png")}}" alt="Menu Icon">
+            </div>
+        </div>
+        <div class="user">
+            <p>Amren</p>
+            <img src="{{url_for("static", filename="img/profile.png")}}" alt="User Image">
+        </div>
+    </header>
+
+    <main>
+    <div class="fillup-container" style="display: flex; justify-content: space-between; height: 70vh;">
+        <div class="first-column" style="flex: 1; height: 100%; width: 100%;">
+            <div class="booking-progress">
+                <label style="font-size: 1.2vw; font-weight: 600; padding-left: 1vw;">Booking Details</label>
+                <div class="shapes">
+                    <div id="circle1" style="z-index: 2; background: rgb(255,255,255); background: radial-gradient(circle, rgba(255,255,255,1) 37%, rgba(189,39,46,1) 46%, rgba(189,39,46,1) 100%);"></div>
+                    <div id="circle2" style="z-index: 2;"></div>
+                    <div id="circle3" style="z-index: 2;"></div>
+                </div>
+                <div class="line-progress"><hr style="width: 27vw; border: none; border-top: 5px solid black; margin-top: -12px; z-index: 1; border-radius: 100px;"></div>
+                <div class="booking-titles">
+                    <p id="title1" style="font-weight: 500;">Booking details</p>
+                    <p id="title2" style="color: gray; font-weight: 500; padding: 0 1vw 0 1vw;">Payment methods</p>
+                    <p id="title3" style="color: gray; font-weight: 500;">Confirmation</p>
+                </div>
+            </div>
+
+        <form action="{{ url_for('method') }}" method="get">
+            <!--Book with driver-->
+            <div class="booking-option">
+                <div id="labels">
+                    <label>Book with driver?</label>
+                    <p>Don't have a driver? Book a driver.</p>
+                </div>
+                <label class="switch" >
+
+                    <!-- eto kahit hindi na iconnect sa database -->
+                    <input type="checkbox">
+                    <span class="slider round"></span>
+                </label>
+            </div>
+            
+            <!-- form groups ay needed -->
+            <div class="form-group">
+                <div>
+                    <i class="fa-regular fa-user"></i>
+                    <input type="text" id="full-name" placeholder="Full Name *" required>
+                </div>
+            </div>
+        
+            <div class="form-group">
+                <div>
+                    <i class="fa-regular fa-envelope"></i>
+                    <input type="email" id="email" placeholder="Email *" required title="Enter a valid email address">
+                </div>
+            </div>
+        
+            <div class="form-group">
+                <div>
+                    <i class="fa-regular fa-address-card"></i>
+                    <input type="tel" id="contact" placeholder="Contact *" required minlength="11" maxlength="11" pattern="[0-9]{11}" title="Enter a valid 11-digit number">
+                </div>
+            </div>
+            
+            <!-- ito kahit hindi na rin kasi wala naman sa receipt page -->
+            <div class="gender-container">
+                <label id="section-label">Gender</label>
+                <div class="gender-options">
+                    <label class="gender-option" for="male">
+                        <input type="radio" id="male" name="gender" value="male" checked required>
+                        <span class="gender-text"><i class="fa-solid fa-person" id="gender-icon"></i>&ensp;Male</span>
+                    </label>
+                    <label class="gender-option" for="female">
+                        <input type="radio" id="female" name="gender" value="female" required>
+                        <span class="gender-text"><i class="fa-solid fa-person-dress" id="gender-icon"></i>&ensp;Female</span>
+                    </label>
+                    <label class="gender-option" for="others">
+                        <input type="radio" id="others" name="gender" value="others" required>
+                        <span class="gender-text"><i class="fa-solid fa-mars-and-venus" id="gender-icon"></i>&ensp;Others</span>
+                    </label>
+                </div>
+            </div>
+            
+            <!-- ito needed -->
+            <div class="form-group">
+                <label id="section-label">Pickup Location</label>
+                <div id="pickup" style="margin-top: 10px;">
+                    <i class="fa-regular fa-compass""></i>
+                    <input type="text" id="pickup-location" placeholder="Boni Ave. Mandaluyong City" required style="height: 2vw; width: 40.5vw;">
+                </div>
+            </div>
+        </div>
+        
+
+        <!--Dates and time-->
+        <div class="second-column" style="margin-top: 1rem; display: flex; flex-direction: column; height: 100%; margin-top: 2rem;">
+            <label id="section-label">Rental Date & Time</label>
+            <div class="date-time-container">    
+                <div class="date-picker">
+                    <div class="pick-up">
+                        
+                        <!-- needed -->
+                        <label>Pick-up Date</label>
+                        <input type="text" placeholder="MM/DD/YYYY" id="pickup-date" required><i class="fa-solid fa-calendar-days"></i>
+                    </div>
+                    <div class="return">
+                        <label>Return Date</label>
+                        <input type="text" placeholder="MM/DD/YYYY" id="return-date" required><i class="fa-solid fa-calendar-days"></i>
+                    </div>
+                </div>
+        
+                <div class="time-picker">
+                    <label>Time</label>
+                    <div class="time-inputs">
+                        <div>
+                            
+                            <!-- needed -->
+                            <input type="time" value="05:30" id="time-input1" required>
+                        </div>
+                        <div>
+                            <input type="time" value="05:30" id="time-input2" required>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="calendar">
+                <div class="calendar-header">
+                    <button id="prevBtn">
+                        <i class="fa-solid fa-chevron-left"></i>
+                    </button>
+                    <div class="month-year" id="monthYear"></div>
+                    <button id="nextBtn">
+                        <i class="fa-solid fa-chevron-right"></i>
+                    </button>
+                </div>
+                <div class="days">
+                    <div class="day">Sun</div>
+                    <div class="day">Mon</div>
+                    <div class="day">Tues</div>
+                    <div class="day">Wed</div>
+                    <div class="day">Thurs</div>
+                    <div class="day">Fri</div>
+                    <div class="day">Sat</div>
+                </div>
+                <div class="dates" id="dates"></div> 
+            </div>
+            <script src="{{ url_for("static", filename="js/booking.js") }}"></script>
+        
+            <!--Buttons-->
+            <div class="buttons"> 
+                <button type="reset" class="reset">Reset</button>
+                <button type="submit" class="book-now">Book Now</button>
+            </div>
+            </div>
+        </form>
+        </div>
+    </div>
+    </main>
+</body>
+</html>

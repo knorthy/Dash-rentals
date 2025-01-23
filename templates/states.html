@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dash2 Rentals: Payment States</title>
+    <link rel="stylesheet" href="{{url_for("static", filename="css/statesstyle.css")}}">
+    <link rel="stylesheet" href="{{ url_for("static", filename="icons/css/all.min.css") }}">  
+</head>
+<body style="background-color: #D8D8DA;">
+    <header>
+        <div class="logo">
+            <a href="{{ url_for('index') }}"><img src="{{url_for("static", filename="img/dash2r.png")}}" alt="logo"></a>
+        </div>
+        <div class="search">
+            <input type="text" placeholder="Search">
+            <div class="menu-icon-container">
+                <img src="{{url_for("static", filename="img/menu-booking.png")}}" alt="Menu Icon">
+            </div>
+        </div>
+        <div class="user">
+            <p>Amren</p>
+            <img src="{{url_for("static", filename="img/profile.png")}}" alt="User Image">
+        </div>
+    </header>
+    <main>
+        <div class="fillup-container">
+            <div class="first-column">
+                <label id="section-label">Payment States</label>
+                <div class="payment-states" style="display: grid; justify-content: center; margin-bottom: 1rem;">
+                    <img src="{{url_for("static", filename="img/car-confirmation.png")}}" style="width: 40vw; z-index: 1;" alt="Car Image">
+                    <img src="{{url_for("static", filename="img/states-check.png")}}" style="width: 2.3vw; z-index: 2; margin: -2vw 0 0 18.5vw;">
+                    <p style="font-size: 17px ; font-weight: 600; margin: 0.3vw 0 0 14vw;">Payment successful</h6>
+                    <p style="font-size: 14px; margin: 0.5vw 0 0 8vw; color: #555;">Your car rent booking has been successfully recorded</p>
+                </div>
+                <div class="booking-info">
+                    <lable id="info-head">Booking Information</lable>
+                    <hr style="border: none; border-top: 1px solid rgb(168, 168, 168); width: 100%;">
+                    <div>
+
+                        <!-- dito rin lalabas -->
+                        <label class="information" style="margin-top: 5px;">Car Model</label>
+                        <label class="user-info" style="margin-top: 5px;">carModel</label>
+                    </div>
+                    <div>
+                        <label class="information">Rental Date</label>
+                        <label class="user-info">pDate&ensp;-&ensp;rDate</label>
+                    </div>
+                    <div>
+                        <label class="information">Name</label>
+                        <label class="user-info">name</label>
+                    </div>
+                </div>
+            </div>
+            <div class="second-column">
+                <div class="transac">
+                    <lable id="info-head">Transaction Detail</lable>
+                    <div style="margin-top: 1rem;">
+
+                        <!-- dito rin -->
+                        <label class="information">Transaction Id</label>
+                        <label class="user-info">tID</label>
+                    </div>
+                    <div>
+                        <label class="information">Transaction Date</label>
+                        <label class="user-info">tDate</label>
+                    </div>
+                    <div>
+                        <label class="information">Payment Method</label>
+                        <label class="user-info">pMethod</label>
+                    </div>
+                    <div>
+                        <label class="information">Amount</label>
+                        <label class="user-info">amt</label>
+                    </div>
+                    <div>
+                        <label class="information">Driver's Fee</label>
+                        <label class="user-info">fee</label>
+                    </div>
+                    <div>
+                        <label class="information">Tax</label>
+                        <label class="user-info">tax</label>
+                    </div>
+                </div>
+                
+                <div class="end-section">
+                    <div style="display: flex; justify-content: space-between; color: #555; margin: 8px 0 8px 0;">
+
+                        <!-- dito ulit yung amount -->
+                        <lable style="font-weight: 500; color: black; font-size: 1.1vw;">Total Amount</lable>
+                        <label class="user-info">totalAmt</label>
+                    </div>
+                    <div class="end-buttons">
+                        <button class="receipt1" onclick="downloadNotReleased()" style="background-color: #e4e4e4;"><i class="fa-solid fa-download" style="color: #878787;"></i>&emsp;Download Receipt</button>
+                        <button class="receipt2" onclick="featureNotReleased()"><i class="fa-solid fa-share-nodes" style="color: #919191;"></i>&emsp;Share your Receipt</button>
+                        <script>
+                            function downloadNotReleased() {
+                                alert("Feature is not yet released.");
+                            }
+                            function featureNotReleased() {
+                                alert("Feature is not yet released.");
+                            }
+                        </script>
+                        <a href="/index" style="justify-self: center;"><button class="backBtn">Back to Home</button></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+</html>

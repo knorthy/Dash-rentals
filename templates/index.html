@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{url_for("static", filename="f-css/index.css")}}">
+    <title>Dash Rentals</title>
+    <link rel="icon" type="image/x-icon" href="{{url_for("static", filename="assets/favicon.ico")}}">
+</head>
+
+<body>
+    <!-- Navbar -->
+    <header>
+        <a href="{{ url_for('index') }}">
+            <img src="{{url_for("static", filename="assets/logo.png")}}" id="logo" alt="Logo" />
+        </a>
+        <div class="search-container">
+            <input type="text" placeholder="Search" />
+            <button>
+                <img src="{{url_for("static", filename="assets/grid.png")}}" alt="grid" />
+            </button>
+        </div>
+        <div class="profile-container">
+            <p id="dropdownMenu">Amren</p>
+            <div id="dropdownContent" class="dropdown-content">
+                <a href="#profile-settings" onclick="featureNotReleased()">Profile Settings</a>
+                <a href="#security-privacy" onclick="featureNotReleased()">Security and Privacy</a>
+                <a href="#help-support" onclick="featureNotReleased()">Help Support</a>
+                <a href="#log-out">Log Out</a>
+            </div>
+            <img src="{{url_for("static", filename="assets/profile.png")}}" id="profile" alt="Profile Picture" />
+        </div>
+        
+    </header>
+    <main>
+        <!-- Info Cards -->
+        <section class="section-info">
+            <div class="info-cards">
+                <img src="{{url_for("static", filename="assets/location.png")}}" alt="search icon" />
+                <div>
+                    <p class="label">Pickup Location</p>
+                    <p class="value">Eastwood Quezon City</p>
+                </div>
+                <p id="chip">I want to rent in a different place</p>
+            </div>
+            <div class="info-cards">
+                <img src="{{url_for("static", filename="assets/calendar.png")}}" alt="calendar icon" />
+                <div>
+                    <p class="label">Pickup date and time</p>
+                    <p class="value">January 22, 2025</p>
+                </div>
+            </div>
+            <div class="info-cards">
+                <img src="{{url_for("static", filename="assets/calendar.png")}}" alt="calendar icon" />
+                <div>
+                    <p class="label">Return Date</p>
+                    <p class="value">January 30, 2025</p>
+                </div>
+            </div>
+            <div class="info-cards">
+                <img src="{{url_for("static", filename="assets/time.png")}}" alt="time icon" />
+                <div>
+                    <p class="label">Return Time</p>
+                    <p class="value">12:00 pm</p>
+                </div>
+            </div>
+            <button>
+                <img src="{{url_for("static", filename="assets/search.png")}}" alt="search icon" />
+            </button>
+        </section>
+
+        <!-- Brands -->
+        <section class="section-brands">
+            <p>BRANDS</p>
+            <div>
+                <a href="{{ url_for('chevi') }}"><img src="{{url_for("static", filename="assets/chevi.png")}}" alt="chevi logo"></a> 
+                <a href="{{ url_for('nissan') }}"><img src="{{url_for("static", filename="assets/ford.png")}}" alt="ford logo"></a>
+                <a href="#" onclick="featureNotReleased()"><img src="{{url_for("static", filename="assets/mercedes.png")}}" alt="mercedes logo"></a>
+                <a href="#" onclick="featureNotReleased()"><img src="{{url_for("static", filename="assets/subarru.png")}}" alt="subarru logo"></a>
+                <a href="#" onclick="featureNotReleased()"><img src="{{url_for("static", filename="assets/hyundai.png")}}" alt="hyundai logo"></a>
+                <a href="#" onclick="featureNotReleased()"><img src="{{url_for("static", filename="assets/lambo.png")}}" alt="lambo logo"></a>
+                <a href="#" onclick="featureNotReleased()"><img src="{{url_for("static", filename="assets/tesla.png")}}" alt="tesla logo"></a>
+                <a href="#" onclick="featureNotReleased()"><img src="{{url_for("static", filename="assets/byd.png")}}" alt="byd logo"></a>
+                <a href="#" onclick="featureNotReleased()"><img src="{{url_for("static", filename="assets/ferrari.png")}}" alt="ferrari logo"></a>
+                <a href="#" onclick="featureNotReleased()"><img src="{{url_for("static", filename="assets/bmw.png")}}" alt="bmw logo"></a>
+                <a href="#" onclick="featureNotReleased()"><img src="{{url_for("static", filename="assets/mazda.png")}}" alt="mazda logo"></a>
+            </div>
+        </section>
+
+        <!-- Yachts & Helicopters -->
+        <section class="section-yh">
+            <div class="yachts">
+                <!-- <img src="static\assets\yachts.png" alt="yachts"> -->
+                <div>
+                    <p>YACHTS</p>
+                    <button onclick="featureNotReleased()">See more</button>
+                </div>
+            </div>
+            <div class="helicopters">
+                <!-- <img src="static\assets\helicopter.png" alt="helicopter"> -->
+                <div>
+                    <p>HELICOPTERS</p>
+                    <button onclick="featureNotReleased()">See more</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Car Cards -->
+        <section class="section-cars">
+            <div class="car-cards">
+                <div class="car-container">
+                    <img src="{{url_for("static", filename="assets/cars/aventador.png")}}" alt="lambo">
+                </div>
+                <div class="card-body">
+                    <p>Ferarri 12Cilindri Spider </p>
+                    <div class="ratings-container">
+                        <p class="ratings">4.9</p>
+                        <img src="{{url_for("static", filename="assets/star.png")}}" alt="star">
+                    </div>
+                    <div class="location-container">
+                        <img src="{{url_for("static", filename="assets/location.png")}}" alt="star">
+                        <p class="location">Biringan City</p>
+                    </div>
+                    <div class="pricing">
+                        <p class="fee">500k/Day</p>
+                        <a href="{{ url_for("booking") }}"><button>Book now</button></a>
+                    </div>
+                </div>
+            </div>
+            <div class="car-cards">
+                <div class="car-container">
+                    <img src="{{url_for("static", filename="assets/cars/lambo.png")}}" alt="lambo">
+                </div>
+                <div class="card-body">
+                    <p>Lamborgini Aventador</p>
+                    <div class="ratings-container">
+                        <p class="ratings">5.0</p>
+                        <img src="{{url_for("static", filename="assets/star.png")}}" alt="star">
+                    </div>
+                    <div class="location-container">
+                        <img src="{{url_for("static", filename="assets/location.png")}}" alt="star">
+                        <p class="location">Eastwood, QC</p>
+                    </div>
+                    <div class="pricing">
+                        <p class="fee">500k/Day</p>
+                        <a href="{{ url_for("booking") }}"><button>Book now</button></a>
+                    </div>
+                </div>
+            </div>
+            <div class="car-cards">
+                <div class="car-container">
+                    <img src="{{url_for("static", filename="assets/cars/bmw.png")}}" alt="lambo">
+                </div>
+                <div class="card-body">
+                    <p>BMW i4 Gran Coupe'</p>
+                    <div class="ratings-container">
+                        <p class="ratings">5.0</p>
+                        <img src="{{url_for("static", filename="assets/star.png")}}" alt="star">
+                    </div>
+                    <div class="location-container">
+                        <img src="{{url_for("static", filename="assets/location.png")}}" alt="star">
+                        <p class="location">Dasmarinas</p>
+                    </div>
+                    <div class="pricing">
+                        <p class="fee">50k/Day</p>
+                        <a href="{{ url_for("booking") }}"><button>Book now</button></a>
+                    </div>
+                </div>
+            </div>
+            <div class="car-cards">
+                <div class="car-container">
+                    <img src="{{url_for("static", filename="assets/cars/tesla.png")}}" alt="lambo">
+                </div>
+                <div class="card-body">
+                    <p>Tesla Roadster</p>
+                    <div class="ratings-container">
+                        <p class="ratings">5.0</p>
+                        <img src="{{url_for("static", filename="assets/star.png")}}" alt="star">
+                    </div>
+                    <div class="location-container">
+                        <img src="{{url_for("static", filename="assets/location.png")}}" alt="star">
+                        <p class="location">Bonifacio Global City</p>
+                    </div>
+                    <div class="pricing">
+                        <p class="fee">200k/Day</p>
+                        <a href="{{ url_for("booking") }}"><button>Book now</button></a>
+                    </div>
+                </div>
+            </div>
+            <div class="car-cards">
+                <div class="car-container">
+                    <img src="{{url_for("static", filename="assets/cars/ferarri.png")}}" alt="lambo">
+                </div>
+                <div class="card-body">
+                    <p>Ferrari Daytona SP3</p>
+                    <div class="ratings-container">
+                        <p class="ratings">5.0</p>
+                        <img src="{{url_for("static", filename="assets/star.png")}}" alt="star">
+                    </div>
+                    <div class="location-container">
+                        <img src="{{url_for("static", filename="assets/location.png")}}" alt="star">
+                        <p class="location">Shaw Boulevard</p>
+                    </div>
+                    <div class="pricing">
+                        <p class="fee">700k/Day</p>
+                        <a href="{{ url_for("booking") }}"><button>Book now</button></a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+         <!-- Duplicate Section-Cars -->
+         <section class="section-cars">
+            <div class="car-cards">
+                <div class="car-container">
+                    <img src="{{url_for("static", filename="assets/cars/aventador.png")}}" alt="lambo">
+                </div>
+                <div class="card-body">
+                    <p>Ferarri 12Cilindri Spider </p>
+                    <div class="ratings-container">
+                        <p class="ratings">4.9</p>
+                        <img src="{{url_for("static", filename="assets/star.png")}}" alt="star">
+                    </div>
+                    <div class="location-container">
+                        <img src="{{url_for("static", filename="assets/location.png")}}" alt="star">
+                        <p class="location">Tondo ni coco martin</p>
+                    </div>
+                    <div class="pricing">
+                        <p class="fee">500k/Day</p>
+                        <a href="{{ url_for("booking") }}"><button>Book now</button></a>
+                    </div>
+                </div>
+            </div>
+            <div class="car-cards">
+                <div class="car-container">
+                    <img src="{{url_for("static", filename="assets/cars/lambo.png")}}" alt="lambo">
+                </div>
+                <div class="card-body">
+                    <p>Lamborgini Aventador</p>
+                    <div class="ratings-container">
+                        <p class="ratings">5.0</p>
+                        <img src="{{url_for("static", filename="assets/star.png")}}" alt="star">
+                    </div>
+                    <div class="location-container">
+                        <img src="{{url_for("static", filename="assets/location.png")}}" alt="star">
+                        <p class="location">Marilag City</p>
+                    </div>
+                    <div class="pricing">
+                        <p class="fee">500k/Day</p>
+                        <a href="{{ url_for("booking") }}"><button>Book now</button></a>
+                    </div>
+                </div>
+            </div>
+            <div class="car-cards">
+                <div class="car-container">
+                    <img src="{{url_for("static", filename="assets/cars/bmw.png")}}" alt="lambo">
+                </div>
+                <div class="card-body">
+                    <p>BMW i4 Gran Coupe' </p>
+                    <div class="ratings-container">
+                        <p class="ratings">5.0</p>
+                        <img src="{{url_for("static", filename="assets/star.png")}}" alt="star">
+                    </div>
+                    <div class="location-container">
+                        <img src="{{url_for("static", filename="assets/location.png")}}" alt="star">
+                        <p class="location">Jan lang sa tabi tabi</p>
+                    </div>
+                    <div class="pricing">
+                        <p class="fee">50k/Day</p>
+                        <a href="{{ url_for("booking") }}"><button>Book now</button></a>
+                    </div>
+                </div>
+            </div>
+            <div class="car-cards">
+                <div class="car-container">
+                    <img src="{{url_for("static", filename="assets/cars/tesla.png")}}" alt="lambo">
+                </div>
+                <div class="card-body">
+                    <p>Tesla Model X</p>
+                    <div class="ratings-container">
+                        <p class="ratings">5.0</p>
+                        <img src="{{url_for("static", filename="assets/star.png")}}" alt="star">
+                    </div>
+                    <div class="location-container">
+                        <img src="{{url_for("static", filename="assets/location.png")}}" alt="star">
+                        <p class="location">Bhie Ghie Chie</p>
+                    </div>
+                    <div class="pricing">
+                        <p class="fee">200k/Day</p>
+                        <a href="{{ url_for("booking") }}"><button>Book now</button></a>
+                    </div>
+                </div>
+            </div>
+            <div class="car-cards">
+                <div class="car-container">
+                    <img src="{{url_for("static", filename="assets/cars/bronco.png")}}" alt="bronco">
+                </div>
+                <div class="card-body">
+                    <p>Bronco Heritage Limited Edition</p>
+                    <div class="ratings-container">
+                        <p class="ratings">5.0</p>
+                        <img src="{{url_for("static", filename="assets/star.png")}}" alt="star">
+                    </div>
+                    <div class="location-container">
+                        <img src="{{url_for("static", filename="assets/location.png")}}" alt="star">
+                        <p class="location">Mt. Kamuning, Kapagod City</p>
+                    </div>
+                    <div class="pricing">
+                        <p class="fee">700k/Day</p>
+                        <a href="{{ url_for("booking") }}"><button>Book now</button></a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script>
+        function featureNotReleased() {
+            alert("Feature is not yet released.");
+        }
+
+        document.addEventListener("DOMContentLoaded", function () {
+            const dropdownMenu = document.getElementById("dropdownMenu");
+            const profileContainer = document.querySelector(".profile-container");
+        
+            dropdownMenu.addEventListener("click", function (event) {
+                event.stopPropagation();
+                profileContainer.classList.toggle("active");
+            });
+        
+            document.addEventListener("click", function (event) {
+                if (!profileContainer.contains(event.target)) {
+                    profileContainer.classList.remove("active");
+                }
+            });
+        });
+    </script>
+    
+</body>
+
+</html>
