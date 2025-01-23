@@ -1,0 +1,1352 @@
+.profile-picture {
+    border: 0;
+    outline: 0;
+    background-color: var(--white);
+    height: 100%;
+    width: 688px;
+    position: absolute;
+    margin: 0 !important;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    border-radius: var(--br-xl);
+  }
+  .search {
+    text-decoration: none;
+    align-self: stretch;
+    position: relative;
+    letter-spacing: 0.03em;
+    font-weight: 300;
+    color: inherit;
+    z-index: 1;
+  }
+  .search-bar {
+    width: 138.4px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: var(--padding-9xs) 0 0;
+    box-sizing: border-box;
+  }
+  .notification-icon {
+    height: 26px;
+    width: 58px;
+    position: absolute;
+    margin: 0 !important;
+    top: 2px;
+    left: -13px;
+    border-radius: var(--br-xl);
+    background-color: var(--color-firebrick);
+    z-index: 1;
+  }
+  .button-icon {
+    height: 31.4px;
+    width: 35px;
+    position: relative;
+    object-fit: cover;
+    z-index: 2;
+  }
+  .notification-bell,
+  .user-bar {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-start;
+    position: relative;
+  }
+  .user-bar {
+    position: absolute;
+    top: 9px;
+    left: 0;
+    width: 704px;
+    justify-content: space-between;
+    padding: 2px var(--padding-7xl) 0.6px 0;
+    box-sizing: border-box;
+    gap: var(--gap-xl);
+    max-width: 100%;
+  }
+  .profile-icon {
+    position: absolute;
+    top: 0;
+    left: 127px;
+    width: 45px;
+    height: 45px;
+    object-fit: cover;
+    z-index: 7;
+  }
+  .user-profile a {
+    color: black; 
+    text-decoration: none; 
+  }
+  
+  .amren {
+    font-family: 'Poppins', sans-serif; 
+    font-weight: 700;
+    top: 20px; 
+    left: 10px; 
+    top: 14px;
+    left: 0;
+    letter-spacing: 0.03em;
+    display: inline-block;
+    width: 182px;
+    height: 25px;
+    z-index: 8;
+  }
+  
+  .user-profile {
+    position: relative; 
+    top: 0;
+    left: 680px;
+    width: 181px;
+    height: 45px;
+    color: var(--text-1);
+  }
+  .footer {
+    width: 861px;
+    height: 45px;
+    position: relative;
+    max-width: 100%;
+    text-align: center;
+    font-size: var(--font-size-sm);
+    color: var(--color-dimgray);
+    font-family: var(--font-poppins);
+  }
+  .date,
+  .logo-link-icon {
+    position: absolute;
+    margin: 0 !important;
+  }
+  .logo-link-icon {
+    width: 180px;
+    height: 180px;
+    top: -47px;
+    left: 26px;
+    object-fit: cover;
+    z-index: 4;
+  }
+  .date {
+    height: 56px;
+    width: 179px;
+    top: 19px;
+    right: -23px;
+    border-radius: var(--br-6xs);
+    background-color: var(--white);
+  }
+  .pickup-date-and {
+    flex: 1;
+    position: relative;
+    letter-spacing: 0.03em;
+    flex-shrink: 0;
+    z-index: 2;
+  }
+  .return-date {
+    align-self: stretch;
+    flex: 1;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-end;
+    padding: 0 var(--padding-mid) 0 25px;
+  }
+  .january-22-2025 {
+    margin-top: -10.8px;
+    flex: 1;
+    position: relative;
+    letter-spacing: 0.03em;
+    display: inline-block;
+    flex-shrink: 0;
+    z-index: 1;
+  }
+  .calendar-selection {
+    align-self: stretch;
+    height: 14.2px;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: var(--font-size-xs);
+    color: var(--text-1);
+  }
+  .date-time-selection {
+    position: absolute;
+    top: 9px;
+    left: 319px;
+    width: 181px;
+    height: 38px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: flex-start;
+  }
+  .calendar-icon {
+    position: absolute;
+    top: 14px;
+    left: 325px;
+    width: 25px;
+    height: 25px;
+    object-fit: cover;
+    z-index: 3;
+  }
+  .location {
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-radius: var(--br-6xs);
+    background-color: var(--white);
+    width: 100%;
+    height: 100%;
+    display: none;
+  }
+  .easwood-quezon-city,
+  .pickup-location1 {
+    position: relative;
+    letter-spacing: 0.03em;
+    flex-shrink: 0;
+    z-index: 1;
+  }
+  .pickup-location1 {
+    width: 139.4px;
+    height: 23.8px;
+    display: inline-block;
+  }
+  .easwood-quezon-city {
+    flex: 1;
+  }
+  .location-name,
+  .search-input {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+  }
+  .location-name {
+    align-self: stretch;
+    flex-direction: row;
+    padding: 0 0 0 var(--padding-lgi);
+    margin-top: -9.8px;
+    font-size: var(--font-size-sm);
+    color: var(--text-1);
+  }
+  .search-input {
+    position: absolute;
+    top: 8px;
+    left: 21px;
+    width: 200px;
+    flex-direction: column;
+  }
+  .location-icon {
+    position: absolute;
+    top: 15px;
+    left: 14px;
+    width: 25px;
+    height: 25px;
+    object-fit: cover;
+    z-index: 1;
+  }
+  .pickup-location {
+    position: absolute;
+    height: 100%;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    border-radius: var(--br-6xs);
+    background-color: var(--white);
+    width: 308px;
+  }
+  .rental-details {
+    height: 56px;
+    width: 500px;
+    position: relative;
+    max-width: 115%;
+    flex-shrink: 0;
+  }
+  .vehicle-type {
+    align-self: stretch;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 0 var(--padding-5xs) 0 var(--padding-9xs);
+    box-sizing: border-box;
+    max-width: 100%;
+    color: var(--color-dimgray);
+  }
+  .brands {
+    width: 79px;
+    position: relative;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    display: inline-block;
+  }
+  .button {
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-radius: 50%;
+    background-color: var(--text-1);
+    width: 100%;
+    height: 100%;
+  }
+  .chevi-icon {
+    position: absolute;
+    top: 6px;
+    left: 6px;
+    width: 37px;
+    height: 32px;
+    object-fit: cover;
+    z-index: 1;
+  }
+  .chevi {
+    height: 47px;
+    width: 49px;
+    position: relative;
+  }
+  .ford-icon,
+  .hyundai-icon,
+  .mercedes-icon,
+  .subarru-icon {
+    position: absolute;
+    top: 10px;
+    left: 7px;
+    width: 35px;
+    height: 29px;
+    object-fit: cover;
+    z-index: 1;
+  }
+  .hyundai-icon,
+  .mercedes-icon,
+  .subarru-icon {
+    top: 8px;
+    left: 8px;
+    width: 34px;
+    height: 32px;
+  }
+  .hyundai-icon,
+  .subarru-icon {
+    top: 13px;
+    left: 6px;
+    width: 37px;
+    height: 21.9px;
+  }
+  .hyundai-icon {
+    top: 9px;
+    height: 31.4px;
+  }
+  .brand-link,
+  .brand-navigation,
+  .car-collection {
+    display: flex;
+    align-items: flex-start;
+    max-width: 100%;
+  }
+  .car-collection {
+    flex: 1;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: var(--gap-xl);
+  }
+  .brand-link,
+  .brand-navigation {
+    justify-content: flex-start;
+    box-sizing: border-box;
+  }
+  .brand-link {
+    align-self: stretch;
+    flex-direction: row;
+    padding: 0 0 0 var(--padding-sm);
+  }
+  .brand-navigation {
+    width: 407px;
+    flex-direction: column;
+    padding: 0 0 56px;
+    gap: 3px;
+    font-size: var(--font-size-sm);
+    color: #030303;
+  }
+  .button4 {
+    position: absolute;
+    top: 0;
+    left: 18px;
+    border-radius: var(--br-6xs);
+    background-color: var(--color-firebrick);
+    width: 171px;
+    height: 23px;
+    z-index: 2;
+  }
+  .i-want-to {
+    position: absolute;
+    top: 5px;
+    left: 0;
+    letter-spacing: 0.03em;
+    font-weight: 600;
+    display: inline-block;
+    width: 203px;
+    height: 24px;
+    z-index: 3;
+  }
+  .location-selection {
+    height: 29px;
+    width: 203px;
+    position: absolute;
+    margin: 0 !important;
+    top: 66px;
+    left: 23px;
+  }
+  .link-icon {
+    height: 500px;
+    flex: 1;
+    position: relative;
+    max-width: 100%;
+    overflow: hidden;
+    object-fit: cover;
+  }
+  .rental-navigation {
+    width: 100%;
+    margin: 0 !important;
+    position: absolute;
+    height: 100%;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-start;
+    max-width: 100%;
+    font-size: 9px;
+  }
+  .yachts1 {
+    margin: 0;
+    position: relative;
+    font-size: inherit;
+    line-height: 16px;
+    font-weight: 800;
+    font-family: inherit;
+    display: inline-block;
+    min-width: 78px;
+    z-index: 1;
+  }
+  .yacht-listing {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 5px 0 0;
+  }
+  .button5 {
+    height: 24px;
+    width: 76px;
+    position: relative;
+    border-radius: var(--br-mini);
+    background-color: var(--color-firebrick);
+    display: none;
+  }
+  .see-more {
+    position: relative;
+    font-size: var(--font-size-xs);
+    line-height: 16px;
+    font-family: var(--font-roboto);
+    color: var(--white);
+    text-align: left;
+    display: inline-block;
+    min-width: 52px;
+    z-index: 2;
+  }
+  .view-yachts {
+    cursor: pointer;
+    border: 0;
+    padding: var(--padding-9xs) var(--padding-2xs) var(--padding-9xs) 13px;
+    background-color: var(--color-firebrick);
+    border-radius: var(--br-mini);
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-start;
+    z-index: 1;
+  }
+  .buttom2:hover,
+  .buttom:hover,
+  .button-parent:hover,
+  .view-yachts:hover {
+    background-color: var(--color-indianred);
+  }
+  .yacht-category-wrapper {
+    align-self: stretch;
+    flex-direction: row;
+    padding: 0 var(--padding-5xs) 0 var(--padding-sm);
+    box-sizing: border-box;
+    text-align: left;
+    font-size: var(--font-size-xl);
+    font-family: var(--font-roboto);
+  }
+  .selection,
+  .yacht-category-wrapper,
+  .yachts {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    max-width: 100%;
+  }
+  .yachts {
+    flex: 1;
+    flex-direction: column;
+    padding: var(--padding-lgi) var(--padding-7xl) 213px;
+    box-sizing: border-box;
+    position: relative;
+    gap: 30px;
+    z-index: 5;
+  }
+  .selection {
+    width: 500px;
+    margin: 0 !important;
+    position: absolute;
+    top: 62px;
+    left: 55px;
+    flex-direction: row;
+  }
+  .lambo-icon {
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    width: 40px;
+    height: 40px;
+    object-fit: cover;
+    z-index: 1;
+  }
+  .lambo {
+    height: 47px;
+    width: 49px;
+    position: absolute;
+    margin: 0 !important;
+    top: 131px;
+    left: -6px;
+  }
+  .january-30-2025,
+  .return-date1 {
+    position: relative;
+    letter-spacing: 0.03em;
+  }
+  .return-date1 {
+    width: 139.4px;
+    display: inline-block;
+    flex-shrink: 0;
+    z-index: 2;
+  }
+  .january-30-2025 {
+    align-self: stretch;
+    z-index: 1;
+  }
+  .january-30-2025-wrapper {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: var(--padding-3xs) 0 0;
+    margin-left: -132.4px;
+    font-size: var(--font-size-smi);
+    color: var(--text-1);
+  }
+  .date1 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-radius: var(--br-6xs);
+    background-color: var(--white);
+    width: 100%;
+    height: 100%;
+  }
+  .return-date-icon {
+    position: absolute;
+    top: 14px;
+    left: 10px;
+    width: 25px;
+    height: 25px;
+    object-fit: cover;
+    z-index: 3;
+  }
+  .date-selection {
+    height: 100%;
+    width: 177px;
+    position: absolute;
+    margin: 0 !important;
+    top: 0;
+    bottom: 0;
+    left: 0;
+  }
+  .return-date-parent {
+    width: 194px;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: var(--padding-3xs) 0 var(--padding-5xs) var(--padding-6xs);
+    box-sizing: border-box;
+    position: relative;
+  }
+  .time {
+    height: 100%;
+    width: 126px;
+    position: absolute;
+    margin: 0 !important;
+    top: 0;
+    bottom: 0;
+    left: 18px;
+    border-radius: var(--br-6xs);
+    background-color: var(--white);
+    z-index: 2;
+  }
+  .pm {
+    align-self: stretch;
+    position: relative;
+    letter-spacing: 0.03em;
+    z-index: 3;
+  }
+  .time-format {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: var(--padding-xs) 0 0;
+  }
+  .return-time {
+    width: 139.4px;
+    position: relative;
+    font-size: var(--font-size-3xs);
+    letter-spacing: 0.03em;
+    color: var(--color-dimgray);
+    display: inline-block;
+    flex-shrink: 0;
+    z-index: 4;
+    margin-left: -159px;
+  }
+  .time-parent {
+    flex: 1;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: var(--padding-3xs) 52px var(--padding-4xs) 0;
+    box-sizing: border-box;
+    position: relative;
+    min-width: 139px;
+    margin-left: -29px;
+    font-size: var(--font-size-smi);
+    color: var(--text-1);
+  }
+  .search-loc-child {
+    height: 56px;
+    width: 63px;
+    position: relative;
+    border-radius: var(--br-6xs);
+    background-color: var(--color-firebrick);
+    display: none;
+  }
+  .search-icon {
+    height: 40px;
+    width: 40px;
+    position: relative;
+    object-fit: cover;
+    z-index: 1;
+  }
+  .frame-group,
+  .search-loc {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-start;
+  }
+  .search-loc {
+    border-radius: var(--br-6xs);
+    background-color: var(--color-firebrick);
+    padding: var(--padding-6xs) var(--padding-2xs) var(--padding-4xs)
+      var(--padding-xs);
+    margin-left: -29px;
+  }
+  .frame-group {
+    align-self: stretch;
+    flex-wrap: wrap;
+    align-content: flex-start;
+    row-gap: 20px;
+  }
+  .bmw-icon,
+  .byd-icon,
+  .ferarri-icon,
+  .tesla-icon {
+    position: absolute;
+    top: 5px;
+    left: 6px;
+    width: 37px;
+    height: 37px;
+    object-fit: cover;
+    z-index: 1;
+  }
+  .bmw-icon,
+  .byd-icon,
+  .ferarri-icon {
+    top: 6px;
+    left: 7px;
+  }
+  .bmw-icon,
+  .ferarri-icon {
+    left: 6px;
+  }
+  .bmw-icon {
+    top: 11px;
+    left: 12px;
+    width: 27px;
+    height: 27px;
+  }
+  .bmw {
+    align-self: stretch;
+    height: 47px;
+    position: relative;
+  }
+  .luxury-car {
+    width: 49px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: var(--padding-12xs) 0 0;
+    box-sizing: border-box;
+  }
+  .mazda-icon {
+    position: absolute;
+    top: 14px;
+    left: 12px;
+    width: 27px;
+    height: 21.4px;
+    object-fit: cover;
+    z-index: 1;
+  }
+  .vehicle-options {
+    width: 401px;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-end;
+    padding: 0 var(--padding-9xs);
+    box-sizing: border-box;
+    max-width: 100%;
+  }
+  .frame-parent {
+    width: 413px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: flex-start;
+    gap: 55px;
+    max-width: 100%;
+  }
+  .time-icon,
+  .time-icon-parent {
+    margin: 0 !important;
+    position: absolute;
+  }
+  .time-icon {
+    height: 36.7px;
+    width: 55px;
+    top: 30px;
+    right: 204px;
+    object-fit: cover;
+    z-index: 5;
+  }
+  .time-icon-parent {
+    width: 100%;
+    height: 100%;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-start;
+    max-width: 100%;
+  }
+  .helicopters1 {
+    margin: 0;
+    position: relative;
+    font-size: inherit;
+    line-height: 16px;
+    font-weight: 800;
+    font-family: inherit;
+    z-index: 1;
+  }
+  .helicopters-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: var(--padding-9xs) 0 0;
+  }
+  .button-parent,
+  .frame-container {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+  }
+  .button-parent {
+    cursor: pointer;
+    border: 0;
+    padding: var(--padding-9xs) var(--padding-xs);
+    background-color: var(--color-firebrick);
+    border-radius: var(--br-mini);
+    justify-content: flex-start;
+    z-index: 1;
+  }
+  .frame-container {
+    flex: 1;
+    justify-content: space-between;
+    max-width: 100%;
+    gap: var(--gap-xl);
+  }
+  .helicopters,
+  .helicopters-inner {
+    display: flex;
+    box-sizing: border-box;
+    max-width: 100%;
+  }
+  .helicopters-inner {
+    align-self: stretch;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-end;
+    padding: 0 16px 0 var(--padding-4xl);
+    text-align: left;
+    font-size: var(--font-size-xl);
+    color: var(--white);
+    font-family: var(--font-roboto);
+  }
+  .helicopters {
+    flex: 1;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: flex-start;
+    padding: 20px var(--padding-4xl) 212px;
+    position: relative;
+    gap: 85px;
+    z-index: 6;
+  }
+  .car-image,
+  .selection1 {
+    position: absolute;
+    margin: 0 !important;
+  }
+  .selection1 {
+    width: 500px;
+    top: 61px;
+    left: 531px;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-start;
+    max-width: 100%;
+    color: var(--color-dimgray);
+  }
+  .car-image {
+    height: 100%;
+    width: 100%;
+    top: 250px;
+    right: -186px;
+    bottom: -250px;
+    left: 186px;
+    border-radius: var(--br-mini);
+    background-color: var(--secondary);
+    border: 1px solid var(--stoke);
+    box-sizing: border-box;
+    transform: rotate(180deg);
+    transform-origin: 0 0;
+  }
+  .frame-child {
+    width: 186px;
+    height: 129px;
+    position: relative;
+    border-radius: 0 0 var(--br-mini) var(--br-mini);
+    background-color: var(--white);
+    border-right: 1px solid var(--stoke);
+    border-bottom: 1px solid var(--stoke);
+    border-left: 1px solid var(--stoke);
+    box-sizing: border-box;
+    display: none;
+  }
+  .lamborghini-aventador {
+    width: 160px;
+    font-size: var(--font-size-sm);
+    font-weight: 600;
+    color: var(--text-1);
+    display: inline-block;
+  }
+  .currency,
+  .lamborghini-aventador,
+  .price-icon {
+    position: relative;
+    z-index: 1;
+  }
+  .currency {
+    letter-spacing: 0.01em;
+    line-height: 117.13%;
+    font-weight: 600;
+    display: inline-block;
+    min-width: 19px;
+  }
+  .price-icon {
+    height: 12.5px;
+    width: 12.4px;
+  }
+  .price-info {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: var(--gap-8xs);
+  }
+  .city-pin-child {
+    width: 10px;
+    height: 11.5px;
+    position: relative;
+    object-fit: contain;
+    z-index: 1;
+  }
+  .city-pin {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: var(--padding-12xs) 0 0;
+  }
+  .biringan-city,
+  .kday {
+    position: relative;
+    display: inline-block;
+    min-width: 69px;
+    z-index: 1;
+  }
+  .kday {
+    min-width: 57.8px;
+  }
+  .rent-days {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: var(--padding-6xs) 0 0;
+  }
+  .buttom-child {
+    height: 29.1px;
+    width: 75.4px;
+    position: relative;
+    border-radius: var(--br-41xl);
+    background-color: var(--color-firebrick);
+    display: none;
+  }
+  .book-now {
+    text-decoration: none;
+    position: relative;
+    font-size: var(--font-size-xs);
+    line-height: 16px;
+    font-family: var(--font-roboto);
+    color: var(--white);
+    text-align: left;
+    display: inline-block;
+    min-width: 55.8px;
+    z-index: 1;
+  }
+  .booking-details,
+  .buttom {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+  }
+  .buttom {
+    cursor: pointer;
+    border: 0;
+    padding: var(--padding-6xs-2) var(--padding-3xs) var(--padding-6xs-3);
+    background-color: var(--color-firebrick);
+    border-radius: var(--br-41xl);
+    justify-content: flex-start;
+    z-index: 1;
+  }
+  .booking-details {
+    align-self: stretch;
+    justify-content: space-between;
+    gap: var(--gap-xl);
+    color: var(--text-1);
+  }
+  .location-details,
+  .rectangle-parent {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: var(--gap-3xs);
+  }
+  .location-details {
+    align-self: stretch;
+  }
+  .rectangle-parent {
+    flex: 1;
+    border-radius: 0 0 var(--br-mini) var(--br-mini);
+    background-color: var(--white);
+    border-right: 1px solid var(--stoke);
+    border-bottom: 1px solid var(--stoke);
+    border-left: 1px solid var(--stoke);
+    padding: var(--padding-3xs) var(--padding-4xs) var(--padding-4xs)
+      var(--padding-3xs);
+    z-index: 1;
+  }
+  .recommended-cars {
+    height: 100.1px;
+    width: 186px;
+    position: absolute;
+    margin: 0 !important;
+    top: 10px;
+    right: -2px;
+    z-index: 2;
+  }
+  .ferrari-laferrari-card-section,
+  .la-ferrari-card {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+  }
+  .ferrari-laferrari-card-section {
+    align-self: stretch;
+    flex-direction: row;
+    padding: 121px 0 0;
+    position: relative;
+  }
+  .la-ferrari-card {
+    flex: 0.9688;
+    flex-direction: column;
+    padding: 0 6px 0 0;
+    box-sizing: border-box;
+    max-width: 192px;
+  }
+  .image-placeholder {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    margin: 0 !important;
+    top: 250px;
+    right: -186px;
+    bottom: -250px;
+    left: 186px;
+    border-radius: var(--br-mini);
+    background-color: var(--secondary);
+    border: 1px solid var(--stoke);
+    box-sizing: border-box;
+    transform: rotate(180deg);
+    transform-origin: 0 0;
+  }
+  .ferrari-laferrari-card-section-child {
+    align-self: stretch;
+    height: 93px;
+    position: relative;
+    max-width: 100%;
+    overflow: hidden;
+    flex-shrink: 0;
+    z-index: 1;
+  }
+  .eastwood-qc,
+  .separator {
+    position: relative;
+    display: inline-block;
+    z-index: 1;
+  }
+  .separator {
+    letter-spacing: 0.01em;
+    line-height: 117.13%;
+    font-weight: 600;
+    min-width: 19px;
+    flex-shrink: 0;
+  }
+  .eastwood-qc {
+    min-width: 76px;
+  }
+  .rectangle-group {
+    align-self: stretch;
+    border-radius: 0 0 var(--br-mini) var(--br-mini);
+    background-color: var(--white);
+    border-right: 1px solid var(--stoke);
+    border-bottom: 1px solid var(--stoke);
+    border-left: 1px solid var(--stoke);
+    padding: var(--padding-3xs) var(--padding-4xs) var(--padding-4xs)
+      var(--padding-3xs);
+    gap: var(--gap-3xs);
+    z-index: 1;
+  }
+  .car-card,
+  .ferrari-laferrari-card-section1,
+  .rectangle-group {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+  }
+  .ferrari-laferrari-card-section1 {
+    align-self: stretch;
+    padding: var(--padding-3xs) 0 0;
+    position: relative;
+    gap: var(--gap-lg);
+  }
+  .car-card {
+    flex: 0.9637;
+    padding: 0 var(--padding-6xs) 0 0;
+    box-sizing: border-box;
+    min-width: 189px;
+    max-width: 193px;
+  }
+  .bmw-gts3-m2 {
+    position: relative;
+    font-size: var(--font-size-sm);
+    font-weight: 600;
+    color: var(--text-1);
+    display: inline-block;
+    min-width: 104px;
+    z-index: 1;
+  }
+  .dasmarinas-icon {
+    height: 12.5px;
+    width: 12.4px;
+    flex-shrink: 0;
+  }
+  .dasmarinas,
+  .dasmarinas-icon,
+  .kday2 {
+    position: relative;
+    z-index: 1;
+  }
+  .kday2 {
+    align-self: stretch;
+    flex-shrink: 0;
+  }
+  .shaw-duration {
+    width: 56.8px;
+    flex-direction: column;
+    padding: var(--padding-6xs) 0 0;
+    box-sizing: border-box;
+  }
+  .buttom2,
+  .ferrari-laferrari-card-section2,
+  .shaw-duration {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+  }
+  .buttom2 {
+    cursor: pointer;
+    border: 0;
+    padding: var(--padding-6xs-2) var(--padding-3xs) var(--padding-6xs-3);
+    background-color: var(--color-firebrick);
+    border-radius: var(--br-41xl);
+    flex-direction: row;
+    flex-shrink: 0;
+    z-index: 1;
+  }
+  .ferrari-laferrari-card-section2 {
+    flex: 1;
+    flex-direction: column;
+    padding: var(--padding-3xs) 0 0;
+    box-sizing: border-box;
+    position: relative;
+    gap: var(--gap-lg);
+    min-width: 182px;
+    max-width: 186px;
+  }
+  .group-icon {
+    align-self: stretch;
+    height: 96px;
+    position: relative;
+    max-width: 100%;
+    overflow: hidden;
+    flex-shrink: 0;
+    z-index: 1;
+  }
+  .tesla-model-s {
+    position: relative;
+    font-size: var(--font-size-sm);
+    font-weight: 600;
+    display: inline-block;
+    min-width: 98.1px;
+    z-index: 1;
+  }
+  .parent {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: var(--gap-8xs);
+    color: var(--text-2);
+  }
+  .bonifacio-global-city,
+  .kday3 {
+    position: relative;
+    display: inline-block;
+    min-width: 113px;
+    z-index: 1;
+  }
+  .kday3 {
+    min-width: 57.8px;
+    flex-shrink: 0;
+  }
+  .global-city-duration {
+    align-self: stretch;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: var(--gap-xl);
+  }
+  .group-div {
+    align-self: stretch;
+    border-radius: 0 0 var(--br-mini) var(--br-mini);
+    background-color: var(--white);
+    border-right: 1px solid var(--stoke);
+    border-bottom: 1px solid var(--stoke);
+    border-left: 1px solid var(--stoke);
+    padding: 10.4px var(--padding-4xs) var(--padding-4xs) var(--padding-3xs);
+    gap: var(--gap-3xs);
+    z-index: 1;
+  }
+  .car-card1,
+  .ferrari-laferrari-card-section3,
+  .group-div {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+  }
+  .ferrari-laferrari-card-section3 {
+    align-self: stretch;
+    padding: var(--padding-3xs) 0 0;
+    position: relative;
+    gap: 15px;
+  }
+  .car-card1 {
+    flex: 0.9637;
+    padding: 0 var(--padding-6xs) 0 0;
+    box-sizing: border-box;
+    min-width: 189px;
+    max-width: 193px;
+    color: var(--text-1);
+  }
+  .ferrari-laferrari,
+  .shaw-boulevard {
+    position: relative;
+    display: inline-block;
+    z-index: 1;
+  }
+  .ferrari-laferrari {
+    font-size: var(--font-size-sm);
+    font-weight: 600;
+    min-width: 110px;
+  }
+  .shaw-boulevard {
+    min-width: 87px;
+  }
+  .ferrari-laferrari-card-section4 {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: var(--padding-3xs) 0 0;
+    box-sizing: border-box;
+    position: relative;
+    gap: var(--gap-lg);
+    min-width: 182px;
+    max-width: 186px;
+    color: var(--text-1);
+  }
+  .car-list {
+    flex: 1;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 11px;
+    max-width: 100%;
+  }
+  
+  .content,
+  .iphone {
+    max-width: 100%;
+    display: flex;
+    box-sizing: border-box;
+  }
+  .content {
+    align-self: stretch;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-end;
+    padding: 0 5% 0 2%; /* Adjust padding using percentages for responsiveness */
+    text-align: left;
+    font-size: 1rem; /* Base font size, responsive with root font size */
+    color: var(--text-2);
+    font-family: var(--font-roboto);
+    max-width: 7200px; /* Prevent overflow */
+    width: 100%; /* Dynamic width */
+    height: auto;
+}
+  .iphone {
+    width: 100%;
+    height: 100vh;
+    background-color: #d8d8da;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: flex-start;
+    padding: var(--padding-lgi) var(--padding-4xl) 21px;
+    position: relative;
+    gap: 5vw;
+    line-height: normal;
+    letter-spacing: normal;
+    text-align: center;
+    font-size: var(--font-size-3xs);
+    color: var(--white);
+    font-family: var(--font-poppins);
+  }
+  @media screen and (max-width: 900px) {
+    .car-list {
+      flex-wrap: wrap;
+    }
+  }
+  @media screen and (max-width: 6750px) {
+    .iphone {
+      gap: 557px;
+    }
+  }
+  @media screen and (max-width: 450px) {
+    .car-collection {
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+    .helicopters1,
+    .yachts1 {
+      font-size: var(--font-size-base);
+      line-height: 13px;
+    }
+    .frame-container {
+      flex-wrap: wrap;
+    }
+    .car-card,
+    .car-card1,
+    .la-ferrari-card {
+      flex: 1;
+    }
+    .iphone {
+      gap: 75px;
+    }
+  }
+  

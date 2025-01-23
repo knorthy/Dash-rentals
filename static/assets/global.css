@@ -1,0 +1,142 @@
+/* Updated global.css */
+body {
+  margin: 0;
+  line-height: normal;
+}
+
+:root {
+  /* fonts */
+  --font-roboto: Roboto;
+  --font-poppins: Poppins;
+
+  /* font sizes */
+  --font-size-xs: 0.75rem;
+  --font-size-sm: 0.875rem;
+  --font-size-xl: 1.25rem;
+  --font-size-base: 1rem;
+  --font-size-3xs: 0.625rem;
+  --font-size-smi: 0.8125rem;
+
+  /* Colors */
+  --white: #fff;
+  --stoke: #d7d7d7;
+  --color-firebrick: #bd282e;
+  --color-indianred: #e34f54;
+  --text-1: #000;
+  --text-2: #7f7f7f;
+  --secondary: #ededed;
+  --color-dimgray: #636364;
+
+  /* Gaps */
+  --gap-lg: 1.125rem;
+  --gap-3xs: 0.625rem;
+  --gap-xl: 1.25rem;
+  --gap-8xs: 0.3125rem;
+
+  /* Paddings */
+  --padding-lgi: 1.1875rem;
+  --padding-4xl: 1.4375rem;
+  --padding-mid: 1.0625rem;
+  --padding-3xs: 0.625rem;
+  --padding-4xs: 0.5625rem;
+  --padding-6xs-2: 0.3875rem;
+  --padding-6xs-3: 0.39375rem;
+  --padding-6xs: 0.4375rem;
+  --padding-12xs: 0.0625rem;
+  --padding-9xs: 0.25rem;
+  --padding-xs: 0.75rem;
+  --padding-2xs: 0.6875rem;
+  --padding-5xs: 0.5rem;
+  --padding-7xl: 1.625rem;
+  --padding-sm: 0.875rem;
+
+  /* Border radiuses */
+  --br-mini: 0.9375rem;
+  --br-41xl: 3.75rem;
+  --br-6xs: 0.4375rem;
+  --br-xl: 1.25rem;
+}
+
+/* Add media queries for responsiveness */
+@media screen and (max-width: 900px) {
+  .car-list {
+      flex-wrap: wrap;
+  }
+}
+
+@media screen and (max-width: 675px) {
+  .iphone {
+      gap: 10vw;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .car-collection {
+      flex-wrap: wrap;
+      justify-content: center;
+  }
+
+  .helicopters1, .yachts1 {
+      font-size: var(--font-size-base);
+      line-height: 1.2;
+  }
+
+  .frame-container {
+      flex-wrap: wrap;
+  }
+
+  .car-card, .car-card1, .la-ferrari-card {
+      flex: 1;
+  }
+
+  .iphone {
+      gap: 5vw;
+  }
+}
+
+/* Additional global improvements */
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.container {
+  max-width: 90%;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+/* Updated index.css */
+.profile-picture {
+  width: 50%;
+  height: auto;
+  position: relative;
+}
+
+.user-bar {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  gap: 1rem;
+}
+
+.footer {
+  width: 100%;
+  text-align: center;
+  font-size: var(--font-size-sm);
+  color: var(--color-dimgray);
+  font-family: var(--font-poppins);
+}
+
+@media screen and (max-width: 600px) {
+  .user-bar {
+      flex-direction: column;
+      align-items: flex-start;
+  }
+
+  .profile-picture {
+      width: 80%;
+  }
+}

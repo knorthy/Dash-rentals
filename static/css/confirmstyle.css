@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* { font-family: "Poppins"; }
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1rem;
+    height: 10vh;
+    width: 98vw;
+}
+main { display: grid; padding: 0 5vw 0 5vw; }
+.form-group i { color:#5e5e5e; margin: 0 0.5vw 0 1.5vw; }
+input::-webkit-input-placeholder { font-size: 1.1vw; }
+#pickup-date::placeholder, #return-date::placeholder { font-size: 13px; }
+input:focus { outline: none; background-color: white; }
+input:focus::placeholder { opacity: 0; }
+
+.logo img { width: 25vh; padding: 1vw 0 1vw 2vw; }
+.search, .user, .form-group div, .gender-container{ display: flex; flex-direction: row; align-items: center; }
+
+.search input {
+    padding: 0.8rem;
+    border-radius: 5rem;
+    width: 130vh;
+    height: 0.6vw;
+    border-color: transparent;
+}
+
+.menu-icon-container {
+    width: 2.8vw;
+    height: 1.8vw;
+    margin-left: -3.5vw;
+    background-color: #BD272E;
+    border-radius: 5vw;
+}
+
+.menu-icon-container img {
+    width: 2.3vw; margin: -0.1vw 0 0 0.2vw;
+}
+
+.user { padding-right: 1vw; }
+.user img { width: 3.5vw; height: auto; margin: -0.2vw 0 0 0.6vw; }
+.user p {
+    width: 4vw;
+    height: 1.5vw;
+    font-size: 1vw;
+    font-weight: 700;
+    letter-spacing: 0.03em;
+    text-align: center;
+}
+
+.booking-progress { display: block;  justify-self: center; margin: 0 0 1.5rem 0;  width: 32vw;}
+.booking-progress div, .booking-titles p { display: flex; justify-content: space-between;  font-size: 1vw; }
+
+.shapes { padding: 1vw 2vw 0 2.5vw; }
+.line-progress {
+    width: 100%;
+    justify-self: center;
+    padding: 0.1vw 2vw 0 2.5vw;
+}
+#circle1, #circle2, #circle3 {
+    width: 1vw;
+    height: 1vw;
+    background: #21292B;
+    border-radius: 5vw;
+}
+
+.details-container { display: flex; justify-content: space-between; align-self: center; width: 100%; white-space: nowrap;}
+
+#section-label { font-weight: 600;  font-size: 1.2vw;  }
+
+.first-column { margin-top: 1rem; width: 50%; flex-shrink: 0;}
+.booking-details, .payment-details, .car-details { margin-bottom: 1.5rem; }
+.payment-details { margin-top: 1.3rem; }
+
+.booking-details div, .payment-details div { display: flex; justify-content: space-between; color: #555; margin: 8px 0 8px 0; }
+
+.information { font-weight: 500; color: #555; }
+
+.sum, .user-info { font-weight: 500; color: black;}
+
+.long-dashed-line {
+    border: none;
+    border-top: 1px dashed rgb(168, 168, 168);
+    border-image: repeating-linear-gradient(to right, rgb(168, 168, 168) 0, rgb(168, 168, 168) 10px, transparent 10px, transparent 20px);
+    border-image-slice: 0.5;
+    margin: 1.2vw 0 1.2vw 0;
+}
+
+.second-column { margin-top: 1rem; width: 40%; }
+
+.car-summary #section-label {
+    background-color: #BD272E;
+    padding: 3px 25px 3px 25px;
+    color: white;
+    border-radius: 20px;
+}
+
+.car-details img {
+    width: 35vw;
+    height: auto;
+}
+
+.detailsbtn {
+    background-color: #BD272E;
+    color: #fff;
+    padding: 0.5rem 1rem 0.5rem 1rem;
+    margin: -2.5rem 0 0 0;
+    border: none;
+    border-radius: 20px;
+    cursor: not-allowed;
+    font-size: 0.8vw;
+    width: 11vw;
+    justify-self: right;
+}
+
+.contBtn button {
+    border: none;
+    border-radius: 10px;
+    background-color: #EA454C;
+    color: white;
+    font-weight: 500;
+    padding: 1vw;
+    width: 25vw;
+    font-size: 0.95vw;
+    cursor: pointer;
+}
+
+::-webkit-scrollbar { width: 12px; height: 12px; }
+::-webkit-scrollbar-track { background: #f1f1f1; border-radius: 10px; }
+::-webkit-scrollbar-thumb { background: #888; border-radius: 10px; }
+::-webkit-scrollbar-thumb:hover { background: #555 }

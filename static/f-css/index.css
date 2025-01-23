@@ -1,0 +1,295 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  padding: 20px;
+  background-color: #d8d8da;
+}
+body header {
+  margin: auto;
+  max-width: 1280px;
+  width: 100%;
+  display: flex;
+  gap: 20px;
+  justify-content: space-between;
+  align-items: center;
+}
+body header img#logo {
+  width: 150px;
+}
+body header div.search-container {
+  padding: 5px 10px;
+  display: flex;
+  justify-content: space-between;
+  width: 70%;
+  background-color: white;
+  border-radius: 20px;
+}
+body header div.search-container input[type=text] {
+  margin: 0 20px;
+  width: 100%;
+  border: none;
+  font-size: 18px;
+}
+body header div.search-container button {
+  all: unset;
+  background-color: #bd272e;
+  padding: 5px 20px;
+  border-radius: 20px;
+  cursor: pointer;
+}
+body header div.search-container button > img {
+  display: block;
+  width: 30px;
+}
+
+/* Style for dropdown */
+.profile-container {
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  cursor: pointer;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  top: 40px;
+  left: 0;
+  background-color: white;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+  min-width: 180px;
+  z-index: 10;
+  flex-direction: column;
+  padding: 10px;
+}
+
+.dropdown-content a {
+  padding: 8px 12px;
+  display: block;
+  text-decoration: none;
+  color: black;
+  font-size: 14px;
+}
+
+.dropdown-content a:hover {
+  background-color: #f1f1f1;
+}
+
+/* Show dropdown when active */
+.profile-container.active .dropdown-content {
+  display: flex;
+}
+
+
+body header div.profile-container {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+body header div.profile-container p {
+  height: -moz-max-content;
+  height: max-content;
+  font-size: 20px;
+  font-weight: 700;
+}
+body header div.profile-container img#profile {
+  width: 50px;
+}
+body main {
+  margin: auto;
+  max-width: 1280px;
+  width: 100%;
+  padding: 30px 0;
+}
+body main section.section-info {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+body main section.section-info div.info-cards {
+  padding: 15px;
+  display: flex;
+  gap: 10px;
+  width: 100%;
+  max-width: 290px;
+  background-color: white;
+  position: relative;
+  border-radius: 10px;
+}
+body main section.section-info div.info-cards > img {
+  width: 40px;
+  height: 40px;
+}
+body main section.section-info div.info-cards div p.label {
+  font-size: 12px;
+  color: rgb(94, 94, 94);
+}
+body main section.section-info div.info-cards div p.value {
+  font-size: 18px;
+  font-weight: 700;
+}
+body main section.section-info div.info-cards p#chip {
+  padding: 5px;
+  position: absolute;
+  bottom: -10px;
+  left: 10px;
+  color: white;
+  font-size: 12px;
+  background-color: #bd272e;
+  border-radius: 10px;
+}
+body main section.section-info button {
+  all: unset;
+  padding: 10px;
+  background-color: #bd272e;
+  border-radius: 10px;
+  height: -moz-max-content;
+  height: max-content;
+  cursor: pointer;
+}
+body main section.section-info button > img {
+  width: 40px;
+}
+body main section.section-brands {
+  margin: 30px 0;
+}
+body main section.section-brands p {
+  margin-bottom: 10px;
+  font-weight: 700;
+}
+body main section.section-brands div {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 5px;
+}
+body main section.section-brands div a img {
+  padding: 5px;
+  background-color: black;
+  width: 50px;
+  border-radius: 25px;
+}
+body main section.section-yh {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+body main section.section-yh > div.yachts {
+  background: url("/static/assets/yachts.png");
+}
+body main section.section-yh > div.helicopters {
+  background: url("/static/assets/helicopter.png");
+}
+body main section.section-yh > div.yachts, body main section.section-yh > div.helicopters {
+  position: relative;
+  min-width: 300px;
+  width: 100%;
+  height: 200px;
+  border-radius: 15px;
+  background-size: cover;
+  background-position: center;
+}
+body main section.section-yh > div.yachts div, body main section.section-yh > div.helicopters div {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+}
+body main section.section-yh > div.yachts div p, body main section.section-yh > div.helicopters div p {
+  color: white;
+  font-size: 24px;
+  font-weight: 600;
+}
+body main section.section-yh > div.yachts div button, body main section.section-yh > div.helicopters div button {
+  all: unset;
+  padding: 5px 15px;
+  background-color: #bd272e;
+  color: white;
+  border-radius: 15px;
+  cursor: pointer;
+}
+body main section.section-cars {
+  margin: 30px 0;
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+body main section.section-cars div.car-cards {
+  width: 240px;
+  background-color: white;
+  border-radius: 10px;
+  overflow: hidden;
+}
+body main section.section-cars div.car-cards div.car-container {
+  background-color: #ededed;
+}
+body main section.section-cars div.car-cards div.car-container img {
+  width: 100%;
+}
+body main section.section-cars div.car-cards div.card-body {
+  padding: 10px;
+  display: flex;
+  gap: 10px;
+  flex-direction: column;
+  font-size: 14px;
+}
+body main section.section-cars div.car-cards div.card-body > p {
+  font-size: 16px;
+  font-weight: 600;
+}
+body main section.section-cars div.car-cards div.card-body div.ratings-container {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  color: rgb(94, 94, 94);
+}
+body main section.section-cars div.car-cards div.card-body div.ratings-container img {
+  width: 20px;
+}
+body main section.section-cars div.car-cards div.card-body div.location-container {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  color: rgb(94, 94, 94);
+}
+body main section.section-cars div.car-cards div.card-body div.location-container img {
+  width: 20px;
+}
+body main section.section-cars div.car-cards div.card-body div.pricing {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+body main section.section-cars div.car-cards div.card-body div.pricing button {
+  all: unset;
+  padding: 10px 15px;
+  background-color: #bd272e;
+  color: white;
+  border-radius: 15px;
+  font-size: 12px;
+  cursor: pointer;
+}
+
+@media screen and (min-width: 700px) {
+  body main section.section-yh {
+    display: flex;
+    flex-direction: column;
+  }
+}
+@media screen and (min-width: 800px) {
+  body main section.section-yh {
+    display: flex;
+    flex-direction: row;
+  }
+}/*# sourceMappingURL=index.css.map */
